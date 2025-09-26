@@ -32,7 +32,7 @@ const ImageUpload = ({ onImageUpload, currentImage }) => {
       const token = localStorage.getItem('token');
 
       const response = await axios.post(
-        'http://localhost:8000/api/upload/image',
+        '${process.env.REACT_APP_API_URL}/api/reports/admin/stats/api/upload/image',
         formData,
         {
           headers: {

@@ -12,7 +12,6 @@ const connectDB = async () => {
     process.exit(1);
   }
 };
-
 // Create or update admin user
 const createAdminUser = async (email, password, name, phone) => {
   try {
